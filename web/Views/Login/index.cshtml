@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "QR Code Login Web Socket";
+    var token = ViewBag.Token;
+    var expiresAt = ViewBag.ExpiresAt;
+}
+
+<h1>QR Code Login Web Socket</h1>
+<div id="qrcode"></div>
+<p>Scan the QR code with your mobile app</p>
+<p>QR code expires at: @expiresAt</p>
+<p>Qr Token : @token</p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+    var token = '@token';
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: token,
+        width: 128,
+        height: 128
+    });
+
+    // WebSocket connection to check login status
+    var ws = new WebSocket("ws://localhost:5080/ws/qr-login");
+
+    ws.onopen = function () {
+        ws.send(token);  // Send the token to WebSocket servers
+    };
+
+    ws.onmessage = function (event) {
+        var data = JSON.parse(event.data);
+        if (data.isAuthenticated) {
+            alert("Login successful!");
+            alert("Token : " + data.token)
+            window.location.href = '/home?token='+ data.token;
+        }
+    };
+
+    ws.onclose = function (event) {
+        if (event.reason === "QR Code Expired") {
+            alert("QR code expired. Please refresh the page.");
+        }
+    };
+
+    // Close the WebSocket connection when navigating away from the page
+    window.addEventListener("beforeunload", function () {
+        ws.close();
+    });
+</script>
