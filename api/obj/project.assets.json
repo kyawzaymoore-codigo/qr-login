@@ -817,11 +817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kyawzaymoore/Documents/playground/QrLogin/api/api.csproj",
+      "projectUniqueName": "/Users/kyawzaymoore/Documents/playground/qr-login/api/api.csproj",
       "projectName": "api",
-      "projectPath": "/Users/kyawzaymoore/Documents/playground/QrLogin/api/api.csproj",
+      "projectPath": "/Users/kyawzaymoore/Documents/playground/qr-login/api/api.csproj",
       "packagesPath": "/Users/kyawzaymoore/.nuget/packages/",
-      "outputPath": "/Users/kyawzaymoore/Documents/playground/QrLogin/api/obj/",
+      "outputPath": "/Users/kyawzaymoore/Documents/playground/qr-login/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kyawzaymoore/.nuget/NuGet/NuGet.Config"

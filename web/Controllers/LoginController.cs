@@ -12,7 +12,7 @@ public class LoginController : Controller
         _httpClient = httpClient;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Websocket()
     {
         var response = await _httpClient.GetAsync("http://localhost:5080/api/qrlogin/generate");
         var qrSession = JsonConvert.DeserializeObject<QrSessionResponse>(await response.Content.ReadAsStringAsync());

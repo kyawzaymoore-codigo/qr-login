@@ -1,0 +1,83 @@
+# General exclusions
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+nupkg/
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Fleet
+.fleet/
+
+# Code Rush
+.cr/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# DotNet Core specific (including .NET 8)
+*.dll
+*.exe
+*.app
+*.pdb
+*.cache/
+*.config
+*.db
+*.bak
+*.swf
+
+# Project-related files
+project.lock.json
+project.fragment.lock.json
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# API and Web project specific
+api/bin/
+api/obj/
+web/bin/
+web/obj/
+
+# Ignore environment and configuration files for both api/ and web/
+api/appsettings*.json
+web/appsettings*.json
+api/*.env
+web/*.env
+
+# Logs
+api/*.log
+web/*.log

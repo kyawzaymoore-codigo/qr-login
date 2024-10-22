@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kyawzaymoore/Documents/playground/QrLogin/web/web.csproj",
+      "projectUniqueName": "/Users/kyawzaymoore/Documents/playground/qr-login/web/web.csproj",
       "projectName": "web",
-      "projectPath": "/Users/kyawzaymoore/Documents/playground/QrLogin/web/web.csproj",
+      "projectPath": "/Users/kyawzaymoore/Documents/playground/qr-login/web/web.csproj",
       "packagesPath": "/Users/kyawzaymoore/.nuget/packages/",
-      "outputPath": "/Users/kyawzaymoore/Documents/playground/QrLogin/web/obj/",
+      "outputPath": "/Users/kyawzaymoore/Documents/playground/qr-login/web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kyawzaymoore/.nuget/NuGet/NuGet.Config"

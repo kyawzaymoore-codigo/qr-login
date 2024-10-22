@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JTsUczs58lk=",
+  "dgSpecHash": "yHSKGjrATaU=",
   "success": true,
-  "projectFilePath": "/Users/kyawzaymoore/Documents/playground/QrLogin/api/api.csproj",
+  "projectFilePath": "/Users/kyawzaymoore/Documents/playground/qr-login/api/api.csproj",
   "expectedPackageFiles": [
     "/Users/kyawzaymoore/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.8/microsoft.aspnetcore.authentication.jwtbearer.8.0.8.nupkg.sha512",
     "/Users/kyawzaymoore/.nuget/packages/microsoft.aspnetcore.openapi/8.0.8/microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
