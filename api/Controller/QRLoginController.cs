@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -21,6 +22,7 @@ public class QRLoginController : ControllerBase
         return Ok(new { token = session.Token, expiresAt = session.ExpiresAt });
     }
 
+    [Authorize]
     [HttpPost("authenticate")]
     public IActionResult Authenticate([FromBody] QRLoginRequest request)
     {
@@ -33,7 +35,7 @@ public class QRLoginController : ControllerBase
         _qrLoginService.Authenticate(request.Token);
         return Ok(new { success = true });
     }
-
+    
     [HttpGet("status")]
     public async Task Status([FromQuery] string token)
     {
